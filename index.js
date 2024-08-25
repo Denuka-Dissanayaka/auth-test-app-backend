@@ -11,16 +11,16 @@ const app = express();
 
 require("dotenv").config();
 
-(async () => {
-  await db.sync();
-})();
+// (async () => {
+//   await db.sync();
+// })();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    //origin: ["https://aoura-demo.netlify.app"],
-    origin: "http://localhost:5173",
+    origin: ["https://auth-test-app-frontend.netlify.app/"],
+    //origin: "http://localhost:5173",
     //methods: ["POST", "GET"],
     credentials: true,
   })
