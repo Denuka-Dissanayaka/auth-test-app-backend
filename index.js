@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: "https://auth-test-app-frontend.netlify.app/",
+    origin: "https://auth-test-app-frontend.netlify.app",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     //origin: "http://localhost:5173",
     //methods: ["POST", "GET"],
